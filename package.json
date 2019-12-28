@@ -1,0 +1,19 @@
+{
+  "name": "TheArtOfSoftwareTesting",
+  "version": "1.0.0",
+  "description": "The Art of Software Testing exercises with Jest",
+  "main": "index.js",
+  "author": "Ismael Oliva",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.7.7",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.1",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  }
+}
