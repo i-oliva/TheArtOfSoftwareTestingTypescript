@@ -4,7 +4,7 @@
 // isosceles, or equilateral.
 //
 import each from "jest-each";
-import { getTriangleType } from "./1Implementation";
+import getTriangleType from "./getTriangleType";
 
 describe("getTriangleType", () => {
   each([
@@ -13,8 +13,11 @@ describe("getTriangleType", () => {
     [1, 2, 10, "not a triangle"],
     [4, 4, 4, "equilateral"],
     [2, 1, 2, "isosceles"],
+    [1, 2, 2, "isosceles"],
+    [2, 2, 1, "isosceles"],
     [2, 3, 4, "scalene"],
-    [7, 5, 6, "scalene"]
+    [7, 5, 6, "scalene"],
+    [1.5, 5, 4, "scalene"]
   ]).test("should return its triangle type", (a, b, c, expected) => {
     expect(getTriangleType(a, b, c)).toBe(expected);
   });
