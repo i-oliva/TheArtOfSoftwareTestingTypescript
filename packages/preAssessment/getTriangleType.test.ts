@@ -18,7 +18,7 @@ describe("getTriangleType", () => {
     [2, 3, 4, "scalene"],
     [7, 5, 6, "scalene"],
     [1.5, 5, 4, "scalene"]
-  ]).test("should return its triangle type", (a, b, c, expected) => {
+  ]).test("Sides %d %d %d: %s", (a, b, c, expected) => {
     expect(getTriangleType(a, b, c)).toBe(expected);
   });
 });
