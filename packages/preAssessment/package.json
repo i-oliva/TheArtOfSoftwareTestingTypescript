@@ -2,6 +2,7 @@
   "name": "preAssessment",
   "version": "1.1.0",
   "scripts": {
+    "start": "nodemon",
     "test": "jest"
   },
   "devDependencies": {
@@ -13,7 +14,9 @@
     "babel-jest": "^24.9.0",
     "jest": "^24.9.0",
     "jest-each": "^24.9.0",
+    "nodemon": "^2.0.2",
     "ts-jest": "^24.2.0",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
   }
 }

@@ -10,14 +10,9 @@ function isIsosceles(x: number, y: number, z: number): boolean {
   return x === y || x === z || y === z;
 }
 
-export default function getTriangleType(
-  x: number,
-  y: number,
-  z: number
-): string {
+export default function getTriangleType(x: number, y: number, z: number): string {
+  console.log(typeof x);
   return isTriangle(x, y, z)
-    ? (isEquilateral(x, y, z) && "equilateral") ||
-        (isIsosceles(x, y, z) && "isosceles") ||
-        "scalene"
-    : "not a triangle";
+    ? (isEquilateral(x, y, z) && 'equilateral') || (isIsosceles(x, y, z) && 'isosceles') || 'scalene'
+    : 'not a triangle';
 }
